@@ -8,18 +8,45 @@
   <packaging>jar</packaging>
 
   <name>demo</name>
-  <url>http://maven.apache.org</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+     <hadoop.version>2.6.0-cdh5.16.2</hadoop.version>
   </properties>
-
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
+	<dependency>
+	    <groupId>org.apache.zookeeper</groupId>
+	    <artifactId>zookeeper</artifactId>
+	    <version>3.5.5</version>
+	</dependency>
+	<dependency>
+	    <groupId>zkclient</groupId>
+	    <artifactId>zkclient</artifactId>
+	    <version>0.3</version>
+	</dependency>
+	<dependency>
+	    <groupId>org.springframework.boot</groupId>
+	    <artifactId>spring-boot</artifactId>
+	    <version>2.1.9.RELEASE</version>
+	</dependency>
   </dependencies>
+  <repositories>
+     <repository>
+         <id>central-repos</id>
+         <name>Central Repository</name>
+         <url>http://repo.maven.apache.org/maven2</url>
+         <snapshots>
+             <enabled>false</enabled>
+         </snapshots>
+     </repository>
+     <repository>
+         <id>cloudera-repos</id>
+         <name>Cloudera Repository</name>
+         <url>https://repository.cloudera.com/content/repositories/releases</url>
+         <snapshots>
+             <enabled>false</enabled>
+         </snapshots>
+     </repository>
+ </repositories>
+  
 </project>
