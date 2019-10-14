@@ -1,4 +1,4 @@
-package com.demo.ha;
+package com.demo.ha.namenode;
  
 import org.apache.zookeeper.*;
 import org.apache.zookeeper.Watcher.Event.EventType;
